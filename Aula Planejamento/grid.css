@@ -1,0 +1,83 @@
+/* ===== Estilo base das grades ===== */
+.grid-example {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+.grid-example div {
+  background: #00d8ff;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 6px;
+}
+
+/* ===== Exemplo 1 ===== */
+.grid-three-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* ===== Exemplo 2 ===== */
+.grid-mixed {
+  grid-template-columns: 150px 2fr 1fr;
+}
+
+/* ===== Exemplo 3 ===== */
+.grid-gap {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* ===== Exemplo 4 ===== */
+.grid-span {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 100px;
+}
+
+.grid-span .item1 {
+  grid-column: span 2;
+  background: #ff8c00;
+}
+
+.grid-span .item3 {
+  grid-row: span 2;
+  background: #ff1493;
+}
+
+/* ===== Teste prático ===== */
+.test-grid {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.test-grid div {
+  background: #00d8ff;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 6px;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 700px) {
+  .test-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .test-grid {
+    grid-template-columns: 1fr;
+  }
+}

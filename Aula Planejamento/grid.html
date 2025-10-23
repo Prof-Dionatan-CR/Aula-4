@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid Layout em CSS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="grid.css" />
+</head>
+<body>
+
+  <header class="subpage-header">
+    <h1>CSS Grid Layout</h1>
+    <p>Aprenda a organizar elementos em linhas e colunas com precisão e facilidade.</p>
+  </header>
+
+  <main class="content-container">
+
+    <section class="intro">
+      <h2>🔹 O que é o CSS Grid</h2>
+      <p>
+        O <strong>CSS Grid Layout</strong> é um sistema bidimensional que permite criar layouts
+        complexos com linhas e colunas. Diferente do Flexbox, que organiza os elementos
+        em um único eixo (horizontal ou vertical), o Grid trabalha com os dois eixos simultaneamente.
+      </p>
+
+      <pre><code>.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}</code></pre>
+    </section>
+
+    <section class="example-section">
+      <h3>🧩 Exemplo 1: Definindo Colunas</h3>
+      <p>
+        No exemplo abaixo, usamos <code>grid-template-columns</code> para dividir o espaço em três colunas iguais.
+      </p>
+
+      <div class="grid-example grid-three-cols">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+      </div>
+    </section>
+
+    <section class="example-section">
+      <h3>📏 Exemplo 2: Tamanhos Diferentes</h3>
+      <p>
+        Podemos combinar tamanhos fixos e flexíveis (como <code>px</code> e <code>fr</code>).
+      </p>
+
+      <div class="grid-example grid-mixed">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </section>
+
+    <section class="example-section">
+      <h3>🎯 Exemplo 3: Espaçamento entre os Itens</h3>
+      <p>Usamos <code>gap</code> para criar espaçamento entre as células da grade.</p>
+
+      <div class="grid-example grid-gap">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+      </div>
+    </section>
+
+    <section class="example-section">
+      <h3>🧱 Exemplo 4: Ocupando Mais Espaço</h3>
+      <p>
+        Um item pode ocupar mais de uma linha ou coluna usando <code>grid-column</code> e <code>grid-row</code>.
+      </p>
+
+      <div class="grid-example grid-span">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+      </div>
+    </section>
+
+    <section class="example-section">
+      <h3>🧪 Teste Prático</h3>
+      <p>
+        Altere as propriedades no arquivo <strong>grid.css</strong> e veja como a grade muda.
+      </p>
+
+      <div class="test-grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+      </div>
+    </section>
+
+    <a href="index.html" class="back-link">⬅ Voltar ao Hub</a>
+
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Prof. Dionatan Inhoato Markiu — © 2025</p>
+  </footer>
+
+</body>
+</html>

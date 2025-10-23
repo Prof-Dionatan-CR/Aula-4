@@ -1,0 +1,80 @@
+/* ===== Exemplo base ===== */
+.flex-example {
+  display: flex;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  gap: 10px;
+  min-height: 100px;
+}
+
+.flex-example div {
+  background: #00d8ff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+  flex: 1;
+  padding: 15px 0;
+}
+
+/* ===== Exemplo 1: Direção ===== */
+.direction-row {
+  flex-direction: row;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+/* ===== Exemplo 2: Alinhamento ===== */
+.center-example {
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Exemplo 3: Espaçamento ===== */
+.space-between {
+  justify-content: space-between;
+}
+
+/* ===== Exemplo 4: Flex Wrap ===== */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap div {
+  flex: 0 0 100px;
+}
+
+/* ===== Teste prático ===== */
+.test-area {
+  display: flex;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-area .box {
+  background: #00d8ff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Responsividade simples ===== */
+@media (max-width: 700px) {
+  .test-area {
+    flex-direction: column;
+  }
+}
