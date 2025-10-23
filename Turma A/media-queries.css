@@ -30,21 +30,17 @@ pre {
   text-align: center;
   font-weight: bold;
   color: #000;
-  transition: background 0.3s;
+  transition: background 1s;
 }
 
 /* ===== Exemplo de layout ===== */
 .layout-example {
-  
-
-
-
+    display: flex;
+    
 }
 
 .col {
   
-
-
   background: rgba(0, 216, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 20px;
@@ -54,4 +50,21 @@ pre {
 }
 
 /* ===== Breakpoints (pontos de quebra) ===== */
+@media(max-width: 900px){
 
+  .responsive-box{
+    background: orange;
+  }
+}
+
+@media(max-width: 600px){
+
+  .responsive-box{
+    background-color: blueviolet;
+  }
+
+  .layout-example{
+    flex-direction: column;
+    gap: 20px;
+  }
+}

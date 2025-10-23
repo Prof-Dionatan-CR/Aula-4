@@ -38,7 +38,7 @@
 
 /* ===== Exemplos em sala ===== */
 .exemplo-fixo {
-  width: 200px;
+  width: 100px;
 }
 
 .relative-example {
@@ -46,23 +46,29 @@
 }
 
 .exemplo-em {
-  
+  width: 15em;
+  background-color: green;
 }
 
 .exemplo-rem {
-  
+  width: 15rem;
+  color: lightblue;
 }
 
 .exemplo-pct {
-  
+  width: 50%;
+  background-color: aqua;
 }
 
 .exemplo-vw {
-  
+  width: 50vw;
+  background-color: pink;
 }
 
 .exemplo-vh {
-  
+  width: 80%;
+  height: 20vh;
+  background-color: peru;
 }
 
 
