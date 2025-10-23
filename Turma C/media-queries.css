@@ -1,0 +1,57 @@
+/* ===== Estrutura das seções ===== */
+.example-section {
+  margin-top: 40px;
+}
+
+.example-section h3 {
+  color: #00d8ff;
+  margin-bottom: 10px;
+}
+
+.example-section p {
+  line-height: 1.6;
+}
+
+pre {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  margin: 15px 0;
+}
+
+/* ===== Exemplo de cor responsiva ===== */
+.responsive-box {
+  margin-top: 20px;
+  padding: 30px;
+  border-radius: 8px;
+  background: #00d8ff;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+  transition: background 0.3s;
+}
+
+/* ===== Exemplo de layout ===== */
+.layout-example {
+  
+
+
+
+}
+
+.col {
+  
+
+
+  background: rgba(0, 216, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* ===== Breakpoints (pontos de quebra) ===== */
+

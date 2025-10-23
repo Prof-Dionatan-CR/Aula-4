@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Queries em CSS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media-queries.css" />
+</head>
+<body>
+
+  <header class="subpage-header">
+    <h1>Media Queries em CSS</h1>
+    <p>Aprenda a criar páginas que se adaptam automaticamente a diferentes tamanhos de tela.</p>
+  </header>
+
+  <main class="content-container">
+
+    <section class="intro">
+      <h2>🔹 O que são Media Queries</h2>
+      <p>
+        As <strong>Media Queries</strong> permitem aplicar regras de estilo CSS condicionais, ou seja, que são ativadas
+        apenas quando certas características do dispositivo (como largura da tela, orientação ou resolução)
+        atendem aos critérios definidos.
+      </p>
+      <p>
+        Elas são o principal recurso usado para tornar um layout <strong>responsivo</strong>, adaptando-se a
+        diferentes dispositivos — de celulares a monitores ultrawide.
+      </p>
+
+      <pre><code>@media (max-width: 600px) {
+  body {
+    background: lightblue;
+  }
+}</code></pre>
+
+      <p>
+        Nesse exemplo, o fundo da página ficará azul claro apenas quando a largura da tela for
+        menor que 600px.
+      </p>
+    </section>
+
+    <section class="example-section">
+      <h3>📱 Exemplo Prático: Cores por Largura</h3>
+      <p>
+        Redimensione a janela do navegador e observe as cores mudando conforme o tamanho da tela.
+      </p>
+
+      <div class="responsive-box">
+        <p>Essa caixa muda de cor conforme o tamanho da tela.</p>
+      </div>
+    </section>
+
+    <section class="example-section">
+      <h3>🧱 Exemplo Prático: Layout com Media Queries</h3>
+      <p>
+        Abaixo temos três blocos. Em telas grandes, eles ficam lado a lado.  
+        Em telas pequenas, se empilham verticalmente.
+      </p>
+
+      <div class="layout-example">
+        <div class="col">Coluna 1</div>
+        <div class="col">Coluna 2</div>
+        <div class="col">Coluna 3</div>
+      </div>
+    </section>
+
+    <section class="example-section">
+      <h3>🎯 Boas Práticas</h3>
+      <ul>
+        <li>Comece com o layout para telas pequenas (<strong>mobile first</strong>).</li>
+        <li>Use <code>min-width</code> para criar breakpoints progressivos.</li>
+        <li>Evite criar muitos breakpoints — mantenha apenas os necessários.</li>
+        <li>Combine media queries com unidades relativas (<code>em</code>, <code>rem</code>, <code>%</code>).</li>
+      </ul>
+    </section>
+
+    <a href="index.html" class="back-link">⬅ Voltar ao Hub</a>
+
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Prof. Dionatan Inhoato Markiu — © 2025</p>
+  </footer>
+
+</body>
+</html>

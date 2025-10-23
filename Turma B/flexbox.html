@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox em CSS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="flexbox.css" />
+</head>
+<body>
+
+  <header class="subpage-header">
+    <h1>Flexbox em CSS</h1>
+    <p>Aprenda a alinhar, distribuir e organizar elementos de forma eficiente com o modelo Flexbox.</p>
+  </header>
+
+  <main class="content-container">
+
+    <section class="intro">
+      <h2>🔹 O que é Flexbox</h2>
+      <p>
+        O <strong>Flexbox</strong> (Flexible Box Layout) é um modelo de layout que facilita o posicionamento,
+        o alinhamento e a distribuição de espaço entre itens dentro de um contêiner.
+        Ele é muito útil para criar layouts responsivos e flexíveis sem precisar usar floats ou posicionamentos complexos.
+      </p>
+
+      <pre><code>.container {
+  display: flex;
+}</code></pre>
+    </section>
+
+    <section class="example-section">
+      <h3>📦 Exemplo 1: Direção dos Itens</h3>
+      <p>Podemos definir a direção principal do eixo com a propriedade <code>flex-direction</code>.</p>
+
+      <div class="flex-example direction-row">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+
+      <div class="flex-example direction-column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </section>
+
+    <section class="example-section">
+      <h3>🧭 Exemplo 2: Alinhamento Horizontal e Vertical</h3>
+      <p>
+        As propriedades <code>justify-content</code> e <code>align-items</code> controlam o alinhamento dos elementos
+        no eixo principal e no eixo transversal, respectivamente.
+      </p>
+
+      <div class="flex-example center-example">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+      </div>
+    </section>
+
+    <section class="example-section">
+      <h3>🧩 Exemplo 4: Flex Wrap</h3>
+      <p>Permite que os itens quebrem linha quando não couberem no contêiner.</p>
+
+      <div class="flex-example flex-wrap">
+        <div>1</div><div>2</div><div>3</div><div>4</div>
+        <div>5</div><div>6</div><div>7</div><div>8</div>
+      </div>
+    </section>
+
+    <section class="example-section">
+      <h3>🎯 Teste Prático</h3>
+      <p>Altere o arquivo <strong>flexbox.css</strong> para ver como as propriedades afetam os layouts abaixo:</p>
+
+      <div class="test-area">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+      </div>
+    </section>
+
+    <a href="index.html" class="back-link">⬅ Voltar ao Hub</a>
+
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Prof. Dionatan Inhoato Markiu — © 2025</p>
+  </footer>
+
+</body>
+</html>
