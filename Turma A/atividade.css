@@ -1,0 +1,162 @@
+/* ====== ESTILO BASE ====== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+  color: #222;
+}
+
+/* ====== NAVBAR ====== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  padding: 15px 50px;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00d8ff;
+}
+
+/* ====== HERO ====== */
+
+.hero {
+  text-align: center;
+  background: linear-gradient(120deg, #00d8ff, #0088ff);
+  color: white;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero button {
+  margin-top: 20px;
+  background: white;
+  color: #0088ff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #eef;
+}
+
+/* ====== PRODUTOS ====== */
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #0088ff;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+.price {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #0088ff;
+}
+
+.card button {
+  background: #0088ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #00b4ff;
+}
+
+/* ====== FOOTER ====== */
+
+.footer {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+/* ====== DICAS PARA RESPONSIVIDADE ======
+
+Os alunos devem:
+- Ajustar o grid dos produtos (ex: 4 colunas → 2 → 1)
+- Fazer a navbar empilhar em telas pequenas
+- Redimensionar o texto e espaçamentos
+- Centralizar elementos conforme necessário
+
+Sugestões:
+@media (max-width: 900px) { ... }
+@media (max-width: 600px) { ... }
+
+*/

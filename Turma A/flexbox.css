@@ -25,27 +25,22 @@
 }
 
 .direction-column {
-  flex-direction: column;
+  
 }
 
 /* ===== Exemplo 2: Alinhamento ===== */
 .center-example {
-  height: 200px;
-  align-items: center;
+  
+  
 }
 
-/* ===== Exemplo 3: Espaçamento ===== */
-.space-between {
-  justify-content: space-between;
-}
-
-/* ===== Exemplo 4: Flex Wrap ===== */
+/* ===== Exemplo 3: Flex Wrap ===== */
 .flex-wrap {
-  flex-wrap: wrap;
+  
 }
 
 .flex-wrap div {
-  flex: 0 0 100px;
+  flex: 0 0 150px;
 }
 
 /* ===== Teste prático ===== */

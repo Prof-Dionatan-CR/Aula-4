@@ -1,0 +1,50 @@
+/* ===== Sessões ===== */
+.example-section {
+  margin-top: 40px;
+}
+
+.example-section h3 {
+  color: #00d8ff;
+  margin-bottom: 15px;
+}
+
+.example-section p {
+  line-height: 1.6;
+}
+
+/* ===== Bootstrap Demo ===== */
+.bootstrap-example {
+  margin-top: 20px;
+}
+
+/* ===== Comparação ===== */
+.comparison-demo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.comparison-demo h4 {
+  margin-bottom: 8px;
+  color: #00d8ff;
+}
+
+.comparison-demo code {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 700px) {
+  .comparison-demo {
+    flex-direction: column;
+    align-items: center;
+  }
+}

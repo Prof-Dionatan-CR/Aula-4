@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidades de Medida em CSS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="unidades.css" />
+</head>
+<body>
+
+  <header class="subpage-header">
+    <h1>Unidades de Medida em CSS</h1>
+    <p>Aprenda como diferentes unidades influenciam o tamanho e o comportamento dos elementos.</p>
+  </header>
+
+  <main class="content-container">
+
+    <section class="intro">
+      <h2>🔹 O que são Unidades de Medida</h2>
+      <p>
+        As unidades em CSS definem <strong>tamanhos, espaçamentos e dimensões</strong> dos elementos.  
+        Elas podem ser classificadas em <strong>fixas, relativas ou responsivas.</strong>
+      </p>
+    </section>
+
+    <!-- Unidades Fixas -->
+    <section class="example-section">
+      <h3>📏 Unidades Fixas (px)</h3>
+      <p>
+        As unidades fixas, como <code>px</code>, mantêm o mesmo tamanho independentemente da tela ou do zoom.  
+        São úteis quando se quer precisão, mas <strong>não são adaptáveis</strong> a diferentes resoluções.
+      </p>
+
+      <div class="example-area fixed-example">
+        <div class="box exemplo-fixo">Largura: 200px</div>
+      </div>
+    </section>
+
+    <!-- Unidades Relativas -->
+    <section class="example-section">
+      <h3>🔸 Unidades Relativas (em e rem)</h3>
+      <p>
+        As unidades relativas ajustam-se conforme o tamanho da fonte base.  
+        <code>em</code> se baseia no elemento pai, e <code>rem</code> se baseia na raiz (<code>html</code>).
+      </p>
+
+      <div class="example-area relative-example">
+        <div class="box exemplo-em">Largura: 15em</div>
+        <div class="box exemplo-rem">Largura: 15rem</div>
+      </div>
+    </section>
+
+    <section class="example-section">
+        <h3>🧠 Experimento: Alterando o tamanho da fonte</h3>
+
+        <div class="font-controls">
+            <div>
+            <h4>Controlar fonte do container (em)</h4>
+            <button id="aumentar-em">+</button>
+            <button id="diminuir-em">-</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Unidades Responsivas -->
+    <section class="example-section">
+      <h3>🌐 Unidades Responsivas (%, vw, vh)</h3>
+      <p>
+        Essas unidades mudam conforme o tamanho da janela ou do elemento pai.  
+        São essenciais para layouts fluidos e design responsivo.
+      </p>
+
+      <div class="example-area responsive-example">
+        <div class="box exemplo-pct">Largura: 50%</div>
+        <div class="box exemplo-vw">Largura: 50vw</div>
+        <div class="box exemplo-vh">Altura: 20vh</div>
+      </div>
+    </section>
+
+    <a href="index.html" class="back-link">⬅ Voltar ao Hub</a>
+
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Prof. Dionatan Inhoato Markiu — © 2025</p>
+  </footer>
+
+  
+    <script src="unidades.js"></script>
+</body>
+</html>

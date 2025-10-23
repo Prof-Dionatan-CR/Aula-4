@@ -1,0 +1,149 @@
+/* ===== Reset e base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  color: #00d8ff;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== Container principal ===== */
+.hub-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto 60px;
+}
+
+/* ===== Cards ===== */
+.card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 25px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+  background: rgba(0, 216, 255, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 216, 255, 0.2);
+}
+
+.card h2 {
+  color: #00d8ff;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* ===== Rodapé ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: auto;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+
+
+.subpage-header {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.subpage-header h1 {
+  color: #00d8ff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subpage-header p {
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.85;
+  font-size: 1.05rem;
+}
+
+.content-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 25px;
+}
+
+
+/* ===== Link de volta ===== */
+.back-link {
+  display: inline-block;
+  margin-top: 50px;
+  text-decoration: none;
+  color: #00d8ff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: #fff;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}

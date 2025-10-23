@@ -38,37 +38,31 @@
 
 /* ===== Exemplos em sala ===== */
 .exemplo-fixo {
-  width: 600px; /*testar*/
+  width: 200px;
 }
 
 .relative-example {
-  font-size: 20px; /*mudar*/
+  font-size: 10px;
 }
 
 .exemplo-em {
-  width: 20em;
-  background: #ff8c00;
+  
 }
 
 .exemplo-rem {
-  width: 15rem;
-  background: #32cd32;
+  
 }
 
 .exemplo-pct {
-  width: 50%;
-  background: #00d8ff;
+  
 }
 
 .exemplo-vw {
-  width: 50vw;
-  background: #ff1493;
+  
 }
 
 .exemplo-vh {
-  width: 80%;
-  height: 20vh;
-  background: #8a2be2;
+  
 }
 
 
